@@ -53,3 +53,7 @@ while True:
   
   ser(a, b)
   
+# калькулятор попроще :)
+# while True:
+#  print(eval(input("Введите ваш пример: ")))
+  
