@@ -14,7 +14,7 @@ def factorial(n):
   return f
 
 def ser(a, b):
-  c = input("Что нужно сделать?\n/ * + - %\nFactorial(f) ")
+  c = input("Что нужно сделать?\n/ * + - % **\nFactorial(f) ")
   if c == "/":
     res = a / b
     print(res)
@@ -22,6 +22,10 @@ def ser(a, b):
 
   elif c == "*":
     res = a * b
+    print(res)
+
+  elif c == "**":
+    res = a ** b
     print(res)
 
   elif c == "+":
@@ -36,7 +40,7 @@ def ser(a, b):
     res = a % b
     print(res)
 
-  elif c.lower() == "f" or c.lower == "factorial":
+  elif c.lower() == "f" or c.lower() == "factorial":
     number = int(input("Введите число для вычисления факториала: "))
     factorial(number)
     print("Факториал числа равен {f}".format(f = factorial(number)))
